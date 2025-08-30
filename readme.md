@@ -28,18 +28,18 @@ The difference between the two implementations highlights the advantage of the G
 The **Gemini** model is able to access and return a more detailed output, including the date, hour, minutes, and seconds.
 
 **Output:**
-
-
+```
 The current date and time is: 2025-08-30 09:28:38
 {'day': 30, 'month': 'August', 'year': 2025, 'hour': 9, 'minutes': 28, 'seconds': 38}
 AgentRunResult(output={'day': 30, 'month': 'August', 'year': 2025, 'hour': 9, 'minutes': 28, 'seconds': 38})
-
+```
 
 ### Local Llama3.1
 The **Llama3.1** model, while successful in using the tool to get the date, does not access the time details.
 
 **Output:**
-
+```
 Today's date is: 2025-08-30
 {'day': 30, 'month': 'August', 'year': 2025}
 AgentRunResult(output={'day': 30, 'month': 'August', 'year': 2025})
+```
